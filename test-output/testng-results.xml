@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Adhoc Run Test Suite" duration-ms="26167" started-at="2019-01-23T19:40:47Z" finished-at="2019-01-23T19:41:13Z">
+    <groups>
+      <group name="CAP">
+        <method signature="TestExcelCAP.testExcel()[pri:0, instance:testscripts.TestExcelCAP@543588e6]" name="testExcel" class="testscripts.TestExcelCAP"/>
+      </group> <!-- CAP -->
+      <group name="Regression">
+        <method signature="TestExcelCAP.testExcel()[pri:0, instance:testscripts.TestExcelCAP@543588e6]" name="testExcel" class="testscripts.TestExcelCAP"/>
+      </group> <!-- Regression -->
+      <group name="Login">
+        <method signature="TestExcelCAP.testExcel()[pri:0, instance:testscripts.TestExcelCAP@543588e6]" name="testExcel" class="testscripts.TestExcelCAP"/>
+      </group> <!-- Login -->
+    </groups>
+    <test name="Test on chrome" duration-ms="26167" started-at="2019-01-23T19:40:47Z" finished-at="2019-01-23T19:41:13Z">
+      <class name="testscripts.TestExcelCAP">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.TestExcelCAP@543588e6]" name="setup" is-config="true" duration-ms="21856" started-at="2019-01-23T19:40:47Z" finished-at="2019-01-23T19:41:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CAP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="testExcel()[pri:0, instance:testscripts.TestExcelCAP@543588e6]" name="testExcel" duration-ms="934" started-at="2019-01-23T19:41:09Z" finished-at="2019-01-23T19:41:10Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at utilities.ReadExcel.loadData(ReadExcel.java:30)
+at testscripts.TestExcelCAP.testExcel(TestExcelCAP.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExcel -->
+        <test-method status="PASS" signature="quit(java.lang.String, java.lang.String)[pri:0, instance:testscripts.TestExcelCAP@543588e6]" name="quit" is-config="true" duration-ms="3283" started-at="2019-01-23T19:41:10Z" finished-at="2019-01-23T19:41:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CAP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="RollbackDatabase(java.lang.String, java.lang.String)[pri:0, instance:testscripts.TestExcelCAP@543588e6]" name="RollbackDatabase" is-config="true" duration-ms="1" started-at="2019-01-23T19:41:13Z" finished-at="2019-01-23T19:41:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CAP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RollbackDatabase -->
+      </class> <!-- testscripts.TestExcelCAP -->
+    </test> <!-- Test on chrome -->
+  </suite> <!-- Adhoc Run Test Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3">
+<test name="Test on Internet Explorer">
+<parameter name="browser" value="Android"/>
+<parameter name="environment" value="MOBILE APP TEST1"/>
+<parameter name="clientName" value="MAP"/>
+<classes>
+<class name="testscripts.map.MAPClientListScripts"/>
+<method>
+    <include name="CashLoanPaymentCancelTC233"/>
+</method>
+</classes>
+</test>
+</suite>

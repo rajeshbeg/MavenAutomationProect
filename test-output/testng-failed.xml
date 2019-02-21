@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Adhoc Run Test Suite]">
+  <parameter name="environment" value="Test 1"/>
+  <parameter name="clientName" value="CAP"/>
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="1" verbose="3" name="Test on chrome(failed)">
+    <method-selectors>
+      <method-selector>
+        <script language="BeanShell">
+          <![CDATA[return groups.containsKey("Login") && groups.containsKey("Regression") && groups.containsKey("CAP");]]>
+        </script>
+      </method-selector>
+    </method-selectors>
+    <classes>
+      <class name="testscripts.TestExcelCAP">
+        <methods>
+          <include name="setup"/>
+          <include name="testExcel"/>
+          <include name="RollbackDatabase"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testscripts.TestExcelCAP -->
+    </classes>
+  </test> <!-- Test on chrome(failed) -->
+</suite> <!-- Failed suite [Adhoc Run Test Suite] -->
