@@ -65,7 +65,7 @@ public void setAssertMessage(String message,int verificationNumber) {
 		assertMessage.add(message);
 	}
 }
-
+//
 public List<String>getAssertMessage(){
 	
 	
